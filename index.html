@@ -1,1 +1,82 @@
 
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<title>Kofolio</title>
+		<!--img scroll appear-->
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<!--scrollSpeed-->
+		<script src="www.jQuery.min.js"></script>
+		<script src ="www.jQuery.scrollSpeed.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!--
+			<button id="top" title="go to top">To Top</button>
+			-->
+			<header id="header">
+				<h1 class="logo">
+					<a href="#"><img src="img/logo.png" alt="logo"></a>
+				</h1>
+				<nav id="nav">
+					<ul class="ul">
+						<li><a href="#" class="active">Work</a></li>
+						<li style="padding-left:60px;"><a href="#about">About</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<figure class="s1 block">
+					<img src="img/1.jpg" alt="푸드서비스홈페이지">
+					<figcaption>
+						<h2 class="title"><a href="htm/s1.htm" target="_blank">Food website design</a></h2>
+					</figcaption>
+				</figure>
+				<figure class="s2 block">
+					<img src="img/2.jpg">
+					<figcaption>
+						<h2 class="title"><a href="htm/s2.htm"> Cosmetics website design</a></h2>
+					</figcaption>
+				</figure>
+				<figure class="s3 block">
+					<img src="img/3.jpg">
+					<figcaption>
+						<h2 class="title"><a href="htm/s3.htm"> Shopping Website design</a></h2>
+					</figcaption>
+				</figure>
+				<figure class="s4 block">
+					<img src="img/4.jpg">
+					<figcaption>
+						<h2 class="title"><a href="htm/s4.htm">Interior Magazine</a></h2>
+					</figcaption>
+				</figure>
+			</section>
+			<footer>
+				<p>E-mail: kuj217@gmail.com</p>
+				<p>Homepage: www.kkuj.com</p>
+			</footer>
+		</div>
+	<script>
+		ScrollReveal().reveal('.block');
+		ScrollReveal().reveal('.title', { delay: 1000 });
+	</script>
+	<script>
+		$( function () {
+			// 기본
+			jQuery . scrollSpeed ( 400 , 600 );
+			// Custom Easing
+			jQuery . scrollSpeed ( 600 , 800 , ' easeOutCubic ' );
+		});
+	</script>
+	<!--
+	<script type="text/javascript">
+			$(function(){
+
+			});
+	</script>
+-->
+	</body>
+</html>
