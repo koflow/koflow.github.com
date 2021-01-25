@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/sub_01.css" type="text/css">
+	<!--box-shadow-->
+	<link rel='stylesheet' href='/box-shadows.min.css'>
+
+	<title>Kofolio</title>
+	<!--img scroll appear-->
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+	<!--scrollSpeed-->
+	<script src="www.jQuery.min.js"></script>
+	<script src="www.jQuery.scrollSpeed.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<!--
+			<button id="top" title="go to top">To Top</button>
+			-->
+		<!-- <h1 class="logo" style="text-align:center;">
+					<a href="../index.html"><img src="../img/kofolio.png" alt="logo" style="text-align:center;"></a>
+				</h1> -->
+		<header id="header">
+
+			<span>
+				<a href="../index.html"><img src="../img/back.png" alt="뒤로" height="30%"></a>
+			</span>
+			<!--
+				<h1 class="logo">
+					<a href="#"><img src="../img/kofolio.png" alt="logo"></a>
+				</h1>
+			-->
+		</header>
+		<section>
+			<div class="sub_wrap">
+				<div class="title">
+					<h4>음식 홈페이지 디자인</h4>
+					<h6>About Project</h6>
+					<p>Mcdonalds Web<br>design</p>
+				</div>
+
+				<img src="../img/1_bg.jpg" alt="1" class="img">
+				<img src="../img/1_2.jpg" alt="2" class="img">
+				<div class="title_2">
+					<h6>Font & Color</h6>
+					<h6 style="float:right;">03</h6>
+
+				</div>
+				<img src="../img/1_3.jpg" alt="폰트와색상" class="img">
+				<img src="../img/1_4.jpg" alt="4" class="img">
+				<img src="../img/1_5.jpg" alt="5" class="img">
+				<div class="title_2">
+					<h6>Application design</h6>
+					<h6 style="float:right;">04</h6>
+
+				</div>
+				<img src="../img/1_6.jpg" alt="6" class="img" width="70">
+			</div>
+		</section>
+		<footer>
+			<p>E-mail: kuj217@gmail.com</p>
+			<p>Homepage: www.kkuj.com</p>
+		</footer>
+	</div>
+	<script>
+		ScrollReveal().reveal('.block');
+		ScrollReveal().reveal('.title', {
+			delay: 1000
+		});
+		ScrollReveal().reveal('.img', {
+			delay: 500
+		});
+	</script>
+	<script>
+		$(function() {
+			// 기본
+			jQuery.scrollSpeed(400, 600);
+			// Custom Easing
+			jQuery.scrollSpeed(600, 800, ' easeOutCubic ');
+		});
+	</script>
+	<!--
+	<script type="text/javascript">
+			$(function(){
+
+			});
+	</script>
+	-->
+</body>
+
+</html>

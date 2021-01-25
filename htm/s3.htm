@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/sub_03.css" type="text/css">
+	<!--box-shadow-->
+	<link rel="stylesheet" href="/box-shadows.min.css">
+
+	<title>Kofolio</title>
+	<!--img scroll appear-->
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+	<!--scrollSpeed-->
+	<script src="www.jQuery.min.js"></script>
+	<script src="www.jQuery.scrollSpeed.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<!--
+			<button id="top" title="go to top">To Top</button>
+			-->
+		<!-- <h1 class="logo" style="text-align:center;">
+					<a href="../index.html"><img src="../img/kofolio.png" alt="logo" style="text-align:center;"></a>
+				</h1> -->
+		<header id="header">
+			<span>
+				<a href="../index.html"><img src="../img/back.png" alt="back" height="30%"></a>
+			</span>
+			<!--
+				<h1 class="logo">
+					<a href="#"><img src="../img/kofolio.png" alt="logo"></a>
+				</h1>
+				-->
+		</header>
+		<section>
+			<div class="sub_wrap">
+				<div class="title info">
+					<h4>쇼핑몰 홈페이지 디자인</h4>
+					<div class="title_2">
+						<h6>About Project</h6>
+						<h6 style="float:right;">01</h6></div>
+					<p>Concept Homepage<br>design</p>
+				</div>
+				<img src="../img/3_2.jpg" alt="1" class="img">
+				<div class="title_2">
+					<h6>Color / Font</h6>
+					<h6 style="float:right;">02</h6>
+
+				</div>
+				<img src="../img/3_info.jpg" alt="2" class="img">
+				<div class="title_2">
+					<h6>Other Page</h6>
+					<h6 style="float:right;">03</h6>
+
+				</div>
+
+				<img src="../img/3_3.jpg" alt="2" class="img">
+				<img src="../img/3_4.jpg" alt="3" class="img">
+				<div class="title_2">
+					<h6>Subpage</h6>
+					<h6 style="float:right;">04</h6>
+
+				</div>
+				<img src="../img/3_5.jpg" alt="4" class="img">
+				<img src="../img/3_gnb.png" alt="4" class="img">
+			</div>
+		</section>
+		<footer>
+			<p>E-mail: kuj217@gmail.com</p>
+			<p>Homepage: www.kkuj.com</p>
+		</footer>
+	</div>
+	<script>
+		ScrollReveal().reveal('.block');
+		ScrollReveal().reveal('.h4', { delay: 500 });
+		ScrollReveal().reveal('h6', { delay: 600 });
+		ScrollReveal().reveal('p', { delay: 700 });
+		ScrollReveal().reveal('.img', { delay: 1000 });
+ 	</script>
+	<script>
+		$(function() {
+			// 기본
+			jQuery.scrollSpeed(400, 600);
+			// Custom Easing
+			jQuery.scrollSpeed(500, 800, ' easeOutCubic ');
+		});
+	</script>
+	<!--
+	<script type="text/javascript">
+			$(function(){
+
+			});
+	</script>
+	-->
+</body>
+
+</html>
